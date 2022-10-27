@@ -12,6 +12,7 @@ const BASE_URL = 'https://pixabay.com/api/';
 const KEY = '30799425-c4e9026dcaafc7c45135155af';
 let page = 1;
 let total = 0;
+let value = '';
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
