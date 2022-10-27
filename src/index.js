@@ -1,4 +1,4 @@
-import axios from 'axios';
+import Axios from 'axios';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -32,7 +32,7 @@ async function fetchPhotos(value) {
     page: page,
   });
   try {
-    const response = await axios.get(`${BASE_URL}?${params}`);
+    const response = await Axios.get(`${BASE_URL}?${params}`);
     if (response.data.hits.length === 0) {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
