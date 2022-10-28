@@ -124,6 +124,6 @@ function renderMarkup(array) {
 loadMoreBtn.addEventListener('click', loadMorePhotos);
 function loadMorePhotos() {
   page += 1;
-  value = inputEl.value;
+  const value = inputEl.value;
   fetchPhotos(value);
 }
